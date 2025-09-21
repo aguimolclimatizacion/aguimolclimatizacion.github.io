@@ -112,7 +112,7 @@ nav a:hover::after {
 /*Sección de inicio (Hero)*/
 
 .hero {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1579737153926-78524d4508ed?fit=crop&q=80&w=1974&ixid=eyJhcHBfaWQiOjEyMDd9');
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1617933622489-3c61d2069a8b?fit=crop&q=80&w=2070');
     background-size: cover;
     background-position: center;
     color: #fff;
@@ -171,6 +171,9 @@ nav a:hover::after {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 2rem;
     margin-top: 2rem;
+    max-width: 800px; /* Ancho máximo para centrar mejor 2 elementos */
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .service-card {
@@ -266,7 +269,6 @@ footer {
 }
 
 /* --- Extraído de script.js --- */
-(agregar en CSS)
 .floating-whatsapp {
     position: fixed;
     bottom: 20px;
@@ -304,7 +306,7 @@ footer {
     <section id="inicio" class="hero">
         <div class="hero-content">
             <h2>Servicio técnico especializado</h2>
-            <p>Reparación, instalación y mantenimiento de Calderas, aire acondicionado,cámaras frigorificas, heladeras y lavarropas.</p>
+            <p>Reparación, instalación y mantenimiento de Calderas y Aires Acondicionados.</p>
             <a href="https://wa.me/5491165564513" class="btn-whatsapp">
                 <i class="fab fa-whatsapp" aria-hidden="true"></i> Contactar por WhatsApp
             </a>
@@ -323,16 +325,6 @@ footer {
                 <i class="fas fa-snowflake" aria-hidden="true"></i>
                 <h3>Aire Acondicionado</h3>
                 <p>Instalación, reparación y mantenimiento.</p>
-            </div>
-            <div class="service-card">
-                <i class="fas fa-thermometer-half" aria-hidden="true"></i>
-                <h3>Heladeras/Freezers</h3>
-                <p>Reparación de motores ,sensores y  carga de gas.</p>
-            </div>
-            <div class="service-card">
-                <i class="fas fa-tint" aria-hidden="true"></i>
-                <h3>Lavarropas</h3>
-                <p>Soluciones electrónicas y mecánicas.</p>
             </div>
         </div>
     </section>
@@ -361,26 +353,16 @@ footer {
     </section>
 
     <footer>
-        <p>&copy; 2023 Climatización AGUIMOL. Todos los derechos reservados.</p>
+        <p>&copy; 2025 Climatización AGUIMOL. Todos los derechos reservados.</p>
     </footer>
 
     <script>
-// Validación del formulario
-document.getElementById('contact-form').addEventListener('submit', function(e) {
-    e.preventDefault();
-    alert('¡Gracias por tu mensaje! Nos contactaremos pronto.');
-    this.reset();
-});
-
-
-// Botón de WhatsApp flotante (opcional)
+// Botón de WhatsApp flotante
 const floatingBtn = document.createElement('a');
 floatingBtn.href = 'https://wa.me/5491165564513';
 floatingBtn.className = 'floating-whatsapp';
 floatingBtn.innerHTML = '<i class="fab fa-whatsapp"></i>';
 document.body.appendChild(floatingBtn);
-
-  //
 </script>
 </body>
 </html>
